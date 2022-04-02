@@ -1,0 +1,214 @@
+.nav-menu{
+    display: inline-block;
+    margin: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    font-family: poppinslight;
+    text-decoration: none;
+}
+
+.nav-menu:hover{
+    color: bisque;
+    transition: 0.3s all;
+}
+
+/*======================== header ==================*/
+
+body{
+    background-color: rgb(34,34,34);
+    color: white;
+    max-width: 1400px;
+    font-family: poppinsregular;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    font-family: astoriaregular;
+    line-height: 20px;
+    font-size: 25px
+}
+
+li{
+    display: inline-block;
+    margin: 30px;
+}
+
+a{
+    color: white;
+    font-family: poppinslight;
+}
+
+a:hover{
+    color: bisque;
+    transition: 0.3s all;
+}
+
+#increva-se-btn{
+    border: 2px solid bisque;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#increva-se-btn:hover{
+    color: white;
+    background-color: bisque;
+}
+
+h1{
+    font-weight: 200;
+}
+
+/*======================== main ==================*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#classes-know-img{
+    width: 100%;
+    height: 90px;
+    display: block;
+}
+
+#row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#container-chines{
+    border-radius: 15px;
+    width: 230px;
+    height: 395px;
+    margin: 15px;
+    float: left;
+    color: black;
+    align-items: center;
+    text-align: center;
+    perspective: 1000px;
+}
+
+#saiba-mais-bttn{
+     border-radius: 15px;
+     padding: 10px;
+     color: black;
+     background-color: bisque;
+     text-decoration: none;
+     font-family: poppinsmedium;
+}
+
+#saiba-mais-bttn:hover{
+    border: 3px solid bisque;
+    background-color: white;
+    color: bisque;
+}
+
+img{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+p{
+    padding: 5px;
+    text-align: center;
+}
+
+.lingua{
+    font-family: poppinsmedium;
+    text-align: center;
+}
+
+.cursos-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+    font-family: poppinslight;
+}
+
+.title{
+    color: white;
+    font-size: 52px;
+    line-height: 52px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-family: poppinsbold;
+}
+
+.subtitle{
+    color: bisque;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================================  flip card =============================== */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  #container-chines:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 15px;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    transform: rotateY(180deg);
+  }
+
+  
